@@ -1,10 +1,22 @@
 // bower:scss
 // endbower
 
+$placeholder-40: #BDBDBD;
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+[data-c-lead] {
+  flex: 1 100%;
+  background: $placeholder-40;
 }
 
 .hero-unit {
