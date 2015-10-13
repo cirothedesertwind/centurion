@@ -2,8 +2,7 @@
   "name": "centurion",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4",
-    "normalize-css": "normalize.css#~3.0.3"
+    "jquery": "~2.1.4"
   },
   "devDependencies": {
     "chai": "~3.3.0",
