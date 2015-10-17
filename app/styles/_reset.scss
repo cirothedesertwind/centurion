@@ -1,8 +1,11 @@
+
+//Remove the padding and margin from every single element
 * {
 margin: 0;
 padding: 0;
 }
 
+//Ensure that every possible element uses border-box measuring
 html {
   box-sizing: border-box;
 }
