@@ -34,5 +34,10 @@ body > [data-centurion] {
         background: grey;
         padding: $padding;
         border: $border;
+
+        /*Child elements*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
