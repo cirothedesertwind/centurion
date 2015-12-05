@@ -17,6 +17,9 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <link rel="stylesheet" href="/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css"/>
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -39,8 +42,10 @@
                         </div>
                     </div>
                 </div>
-                <p data-cc="u2">A</p>
-                <p data-cc="u4">A</p>
+                <p style="width: 250px" id="resizable" class="ui-widget-content"><image src="https://placekitten.com/g/250/350"></img></p>
+                <p data-cc="u4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
                 <p data-cc="u4">A</p>
                 <p data-cc="u6">B</p>
             </div>
@@ -53,6 +58,17 @@
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
+        <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <script>
+  $(function() {
+    $( "#resizable" ).resizable({
+      autoHide: true,
+      grid: [ $( "#resizable" ).parent().width() / 6, 50],
+    });
+  });
+  </script>
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
